@@ -44,14 +44,14 @@ const courses: Course[] = [
 
 export default function NewCourses() {
   return (
-    <div className="col-span-2  w-full">
-      <div className="flex justify-between items-center mb-4">
+    <div className=" w-full">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-2">
         <h2 className="text-2xl font-semibold">New Courses</h2>
         <a href="#" className="text-sm text-gray-500 underline">
           View All
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {courses.map((course, index) => (
           <div
             key={index}
