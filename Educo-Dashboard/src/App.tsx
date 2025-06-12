@@ -1,5 +1,5 @@
 import Sidebar from './components/sidebar'
-// import Header from './components/Header'
+import Header from './components/Header'
 // import NewCourses from './components/NewCourses'
 // import HoursActivity from './components/HoursActivity'
 // import DailySchedule from './components/DailySchedule'
@@ -16,7 +16,7 @@ export default function App() {
     <div className="flex min-h-screen bg-light font-sans text-dark border-purple-400 border-l-10 border-r-10 border-t-15 border-b-15 border-rounded-3xl shadow-lg">
       <Sidebar />
       <main className="flex-1 p-6 overflow-y-auto ">
-        {/* <Header /> */} 
+        <Header /> 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
           <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* <NewCourses />

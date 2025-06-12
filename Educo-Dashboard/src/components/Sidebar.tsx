@@ -91,7 +91,7 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className="w-64 bg-slate-900 text-white flex flex-col py-2 rounded-3xl m-12 ">
+    <div className="w-60 bg-slate-900 text-white flex flex-col py-2 rounded-3xl ml-12 mt-12 mb-12">
       <img className="mb-10 w-40 h-16 " src={EducoLogo} alt="EDUCO Logo" />
       <nav className="flex flex-col gap-4 px-4">
         {navItems.map(({ label, icon, route, badge }) => {
