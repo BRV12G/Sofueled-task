@@ -1,6 +1,6 @@
 import Sidebar from './components/sidebar'
 import Header from './components/Header'
-// import NewCourses from './components/NewCourses'
+import NewCourses from './components/NewCourses'
 // import HoursActivity from './components/HoursActivity'
 // import DailySchedule from './components/DailySchedule'
 // import CoursesTaking from './components/CoursesTaking'
@@ -19,10 +19,10 @@ export default function App() {
         <Header /> 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
           <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* <NewCourses />
-            <HoursActivity />
+             <NewCourses />
+            {/* <HoursActivity />
             <DailySchedule />
-            <CoursesTaking /> */}
+            <CoursesTaking />  */}
           </div>
           <div className="flex flex-col gap-6">
             {/* <Calendar />
