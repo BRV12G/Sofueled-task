@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between mt-10">
+    <header className="flex items-center justify-between mt-2">
       <div className="text-3xl font-bold">
         Welcome back <span className="inline-block animate-wiggle">Taylor 👋</span>
       </div>

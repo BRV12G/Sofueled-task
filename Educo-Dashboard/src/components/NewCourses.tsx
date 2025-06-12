@@ -44,9 +44,9 @@ const courses: Course[] = [
 
 export default function NewCourses() {
   return (
-    <div className="col-span-2 p-6 w-full">
+    <div className="col-span-2  w-full">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold">New Courses</h2>
+        <h2 className="text-2xl font-semibold">New Courses</h2>
         <a href="#" className="text-sm text-gray-500 underline">
           View All
         </a>
