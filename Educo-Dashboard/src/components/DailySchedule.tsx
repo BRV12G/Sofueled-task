@@ -50,19 +50,16 @@ export default function DailySchedule() {
             className="flex items-center justify-between px-3 py-3 rounded-xl"
           >
             <div className="flex items-center gap-3">
-              {/* ✅ Colored Icon Circle */}
               <div className={`p-3 rounded-xl ${item.iconBg}`}>
                 {item.icon}
               </div>
 
-              {/* ✅ Title + Subtitle */}
               <div>
                 <div className="font-semibold text-sm">{item.title}</div>
                 <div className="text-xs text-gray-800">{item.subtitle}</div>
               </div>
             </div>
 
-            {/* ✅ Arrow Icon */}
             <div className="p-2   rounded-md bg-gray-100">
               <IoIosArrowForward className="text-gray-900" />
             </div>
