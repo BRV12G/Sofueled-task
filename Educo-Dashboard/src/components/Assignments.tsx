@@ -1,5 +1,9 @@
 
 import { FiPlus } from 'react-icons/fi'
+import logo1 from '../assets/assign_1.png';
+import logo2 from '../assets/assign_2.png';
+import logo3 from '../assets/assign_3.png';
+
 
 type Assignment = {
   title: string
@@ -15,21 +19,21 @@ const assignments: Assignment[] = [
     due: '02 July, 10:30 AM',
     status: 'In progress',
     iconBg: 'bg-orange-50',
-    icon: <span className="text-lg sm:text-xl">🧬</span>,
+    icon: <span className="text-lg sm:text-xl"><img src={logo1} alt="Icon 1" /></span>,
   },
   {
     title: 'Market Research',
     due: '14 June, 12:45 AM',
     status: 'Completed',
     iconBg: 'bg-lime-100',
-    icon: <span className="text-lg sm:text-xl">🧠</span>,
+    icon: <span className="text-lg sm:text-xl"><img src={logo2} alt="Icon 2" /></span>,
   },
   {
     title: 'Data Collection',
     due: '12 May, 11:00 AM',
     status: 'Upcoming',
     iconBg: 'bg-orange-100',
-    icon: <span className="text-lg sm:text-xl">📊</span>,
+    icon: <span className="text-lg sm:text-xl"><img src={logo3} alt="Icon 3" /></span>,
   },
 ]
 
