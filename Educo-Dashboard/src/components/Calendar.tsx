@@ -93,7 +93,7 @@ export default function Calendar() {
               key={idx}
               className={`h-8 w-8 flex items-center justify-center rounded-full ${
                 isToday
-                  ? 'bg-lime-400 text-white font-semibold'
+                  ? 'bg-lime-400  font-semibold'
                   : item.current
                   ? 'text-black hover:bg-gray-100'
                   : 'text-gray-400'

@@ -42,10 +42,10 @@ export default function CoursesTaking() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
         <h2 className="text-xl sm:text-2xl font-semibold">Course You're Taking</h2>
         <div className="flex items-center gap-2">
-          <button className="flex items-center text-xs sm:text-sm bg-gray-100 px-2 sm:px-3 py-1.5 rounded-full">
+          <button className="flex items-center text-xs sm:text-sm bg-white px-2 sm:px-3 py-1.5 rounded-full">
             Active <IoIosArrowDown className="ml-1 text-base sm:text-lg" />
           </button>
-          <button className="p-1.5 bg-lime-400 text-white rounded-full">
+          <button className="p-1.5 bg-lime-400 text-black rounded-full">
             <AiOutlinePlus className="text-base sm:text-lg" />
           </button>
         </div>
