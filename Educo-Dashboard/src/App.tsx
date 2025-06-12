@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import NewCourses from "./components/NewCourses";
 import HoursActivity from "./components/HoursActivity";
 import DailySchedule from "./components/DailySchedule";
-// import CoursesTaking from './components/CoursesTaking'
+import CoursesTaking from './components/CoursesTaking'
 // import Calendar from './components/Calendar'
 // import Assignments from './components/Assignments'
 
@@ -18,24 +18,22 @@ export default function App() {
           <Header />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
             <div className="lg:col-span-3">
-              <NewCourses />{" "}
+              <NewCourses />
             </div>
-            <div className="col-span-1 flex flex-col">
+            <div className="col-span-1 flex flex-col h-full">
               <div className="h-full">
-                <HoursActivity />{" "}
-              </div>{" "}
+                <HoursActivity />
+              </div>
             </div>
-            <div className="col-span-1 flex flex-col">
+            <div className="col-span-1 flex flex-col h-full">
               <div className="h-full">
                 <DailySchedule />
               </div>
             </div>
-            {/* <CoursesTaking />  */}
-
-            <div className="flex flex-col gap-6">
-              {/* <Calendar />
-            <Assignments /> */}
-            </div>
+          </div>
+          {/* CoursesTaking section below the grid */}
+          <div className="mt-6">
+            <CoursesTaking />
           </div>
         </main>
       </div>
