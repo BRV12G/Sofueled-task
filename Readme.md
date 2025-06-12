@@ -20,7 +20,7 @@
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## React+ Vite + Tailwind CSS setup
+## React+ Vite + Typescript setup
 
 1. **Installation command**
     ```bash
