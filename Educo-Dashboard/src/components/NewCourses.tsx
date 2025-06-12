@@ -69,7 +69,7 @@ export default function NewCourses() {
 
             <div className="flex  text-xs text-gray-800  justify-between mt-4">
               <p>Rate</p>
-              <p className='text-left w-1/2 pl-5' >Type</p>
+              <p className='text-right flex-1 pr-12' >Type</p>
             </div>
 
             <div className="flex justify-between items-center text-sm  text-gray-700">
