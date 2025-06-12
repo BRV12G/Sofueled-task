@@ -187,7 +187,7 @@ export default function HoursActivity() {
   const maxHours = 8
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-sm font-sans">
+    <div className="bg-white p-6 rounded-2xl shadow-md w-full h-full font-sans">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <div>
