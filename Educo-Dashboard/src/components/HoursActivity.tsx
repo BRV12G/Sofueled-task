@@ -25,7 +25,7 @@ export default function HoursActivity() {
   const maxHours = 8
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-md w-full h-full font-sans">
+    <div className="bg-white p-8 rounded-2xl shadow-md w-full h-full font-sans">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <div>
@@ -45,7 +45,7 @@ export default function HoursActivity() {
       {/* Graph area */}
       <div className="relative flex gap-3 mt-4">
         {/* Y-Axis */}
-        <div className="flex flex-col justify-between h-40 text-xs text-gray-400 pr-2">
+        <div className="flex flex-col justify-between h-70 text-xs text-gray-400 pr-2">
           {[8, 6, 4, 2, 0].map((h) => (
             <div key={h} className="h-[20%] flex items-center justify-end">
               {h}h
@@ -56,7 +56,7 @@ export default function HoursActivity() {
         {/* Chart grid + bars */}
         <div className="relative w-full">
           {/* CHANGED: Grid lines */}
-          <div className="absolute top-0 left-0 w-full h-40 flex flex-col justify-between z-0 pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-70 flex flex-col justify-between z-0 pointer-events-none">
             {[...Array(5)].map((_, i) => (
               <div
                 key={i}
@@ -67,7 +67,7 @@ export default function HoursActivity() {
           </div>
 
           {/* Bars */}
-          <div className="relative flex items-end justify-between h-40 z-10">
+          <div className="relative flex items-end justify-between h-70 z-10">
             {activityData.map((day, idx) => {
               const isHighlight = idx === 3
               const heightPercent = (day.hours / maxHours) * 100
@@ -126,7 +126,7 @@ export default function HoursActivity() {
                       bottom: `calc(${heightPercent}% + 8px)`, // 8px matches minHeight
                     }}
                     >
-                    😍 {day.hours}h<br />{day.date}
+                    😍 {day.hours}hrs<br />{day.date}
                   </div>
                 )}
               </div>
