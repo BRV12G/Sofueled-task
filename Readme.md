@@ -20,7 +20,7 @@
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## React+ Vite + Tailwind CSS setup
+## React+ Vite + Typescript setup
 
 1. **Installation command**
     ```bash
@@ -36,3 +36,22 @@
     npm install
     npm run dev
     ```
+
+## Tyepscript setup
+
+1. **Installation command**
+    ```bash
+    npm install @tailwindcss/vite
+    ```
+2. **Modify the vite.config.ts file**
+    add the below 2 lines in the existing file
+    ```bash
+    import tailwindcss from '@tailwindcss/vite'
+        tailwindcss(), //(inside the plugins)
+    ```
+3.   **Add the import statement in the index.css file**
+     ```bash
+     @import "tailwindcss";
+    ```  
+
+
