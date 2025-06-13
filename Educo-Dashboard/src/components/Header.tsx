@@ -1,6 +1,4 @@
-
-
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -13,7 +11,8 @@ export default function Header() {
           </svg>
         </button> */}
         <div className="text-2xl sm:text-3xl font-bold">
-          Welcome back <span className="inline-block animate-wiggle">Taylor 👋</span>
+          Welcome back{" "}
+          <span className="inline-block animate-wiggle">Taylor 👋</span>
         </div>
       </div>
       <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto">
