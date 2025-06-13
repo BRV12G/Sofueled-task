@@ -1,8 +1,12 @@
 import { FaRegLightbulb } from 'react-icons/fa'
-import { HiOutlineBeaker } from 'react-icons/hi'
 import { LuPaintBucket } from 'react-icons/lu'
 import { PiMagicWandLight } from 'react-icons/pi'
 import { IoIosArrowForward } from 'react-icons/io'
+import { RxDashboard } from "react-icons/rx";
+import { FaRegCircleStop } from "react-icons/fa6";
+import { IoIosColorFilter } from "react-icons/io";
+import { IoColorPaletteOutline } from "react-icons/io5";
+
 
 type ScheduleItem = {
   title: string
@@ -15,32 +19,32 @@ const schedule: ScheduleItem[] = [
   {
     title: 'Design System',
     subtitle: 'Lecture - Class',
-    icon: <HiOutlineBeaker className="text-xl" />,
+    icon: <RxDashboard className="text-xl" size={30} />,
     iconBg: 'bg-orange-100 ',
   },
   {
     title: 'Typography',
     subtitle: 'Group - Test',
-    icon: <FaRegLightbulb className="text-xl" />,
+    icon: <FaRegCircleStop className="text-xl" size={30}/>,
     iconBg: 'bg-purple-100 ',
   },
   {
     title: 'Color Style',
     subtitle: 'Group - Test',
-    icon: <LuPaintBucket className="text-xl" />,
+    icon: <IoColorPaletteOutline  className="text-xl" size={30}/>,
     iconBg: 'bg-lime-100 ',
   },
   {
     title: 'Visual Design',
     subtitle: 'Lecture - Test',
-    icon: <PiMagicWandLight className="text-xl" />,
+    icon: <IoIosColorFilter className="text-xl" size={30} />,
     iconBg: 'bg-yellow-100 ',
   },
 ]
 
 export default function DailySchedule() {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-sm">
+    <div className="bg-white p-4 rounded-2xl shadow-md w-full max-w-sm">
       <h2 className="text-2xl font-semibold mb-2">Daily Schedule</h2>
 
       <div className="flex flex-col gap-1">
@@ -50,13 +54,13 @@ export default function DailySchedule() {
             className="flex items-center justify-between px-3 py-3 rounded-xl"
           >
             <div className="flex items-center gap-3">
-              <div className={`p-3 rounded-xl ${item.iconBg}`}>
+              <div className={`p-4 rounded-xl ${item.iconBg}`}>
                 {item.icon}
               </div>
 
-              <div>
-                <div className="font-semibold text-sm">{item.title}</div>
-                <div className="text-xs text-gray-800">{item.subtitle}</div>
+              <div className="flex flex-col ">
+                <div className="font-semibold text-lg">{item.title}</div>
+                <div className="text-md text-gray-800">{item.subtitle}</div>
               </div>
             </div>
 
