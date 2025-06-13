@@ -1,3 +1,4 @@
+import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { RxDashboard } from "react-icons/rx";
 import { FaRegCircleStop } from "react-icons/fa6";
@@ -7,7 +8,7 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 type ScheduleItem = {
   title: string;
   subtitle: string;
-  icon: JSX.Element;
+  icon: React.ReactElement;
   iconBg: string;
 };
 

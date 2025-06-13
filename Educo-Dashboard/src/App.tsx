@@ -41,7 +41,7 @@
 //   );
 // }
 
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import NewCourses from "./components/NewCourses";
 import HoursActivity from "./components/HoursActivity";

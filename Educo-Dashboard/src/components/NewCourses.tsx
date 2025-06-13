@@ -1,15 +1,16 @@
 // src/components/NewCourses.tsx
 import { FaStar, FaPenNib } from "react-icons/fa";
-import { LuFlaskConical } from "react-icons/lu";
 import { PiCamera } from "react-icons/pi";
 import { LuMessageSquareCode } from "react-icons/lu";
+
+import React from "react";
 
 type Course = {
   title: string;
   lessons: number;
   rating: number;
   type: string;
-  icon: JSX.Element;
+  icon: React.ReactElement;
   bgColor: string;
 };
 
