@@ -1,6 +1,4 @@
-import { FaRegLightbulb } from 'react-icons/fa'
-import { LuPaintBucket } from 'react-icons/lu'
-import { PiMagicWandLight } from 'react-icons/pi'
+
 import { IoIosArrowForward } from 'react-icons/io'
 import { RxDashboard } from "react-icons/rx";
 import { FaRegCircleStop } from "react-icons/fa6";

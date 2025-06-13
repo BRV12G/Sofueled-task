@@ -2,6 +2,7 @@
 import { FaStar, FaPenNib } from 'react-icons/fa'
 import { LuFlaskConical } from 'react-icons/lu'
 import { PiCamera } from 'react-icons/pi'
+import { LuMessageSquareCode } from "react-icons/lu";
 
 type Course = {
   title: string
@@ -27,8 +28,8 @@ const courses: Course[] = [
     lessons: 15,
     rating: 5.0,
     type: 'UI/UX Design',
-    icon: <LuFlaskConical className="text-2xl" />,
-    bgColor: 'bg-green-100',
+    icon: <LuMessageSquareCode className="text-2xl" />,
+    bgColor: 'bg-lime-100',
 
   },
   {
@@ -37,7 +38,7 @@ const courses: Course[] = [
     rating: 4.6,
     type: 'Art and Design',
     icon: <PiCamera className="text-2xl" />,
-    bgColor: 'bg-purple-100',
+    bgColor: 'bg-indigo-100',
 
   },
 ]

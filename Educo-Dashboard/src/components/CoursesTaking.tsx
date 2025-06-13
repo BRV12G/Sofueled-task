@@ -3,6 +3,8 @@
 
 import { IoIosArrowDown } from 'react-icons/io'
 import { AiOutlinePlus } from 'react-icons/ai'
+import Courses1 from '../assets/courses_1.png'
+import Courses2 from '../assets/courses_2.png'
 
 type Course = {
   title: string
@@ -21,7 +23,7 @@ const courses: Course[] = [
     remaining: '8h 45 min',
     progress: 45,
     bgColor: '#dcd7ff',
-    icon: 'https://cdn-icons-png.flaticon.com/512/2721/2721320.png',
+    icon: Courses1,
     instructorAvatar: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {
@@ -30,7 +32,7 @@ const courses: Course[] = [
     remaining: '18h 12 min',
     progress: 75,
     bgColor: '#ffd4dc',
-    icon: 'https://cdn-icons-png.flaticon.com/512/1055/1055687.png',
+    icon: Courses2,
     instructorAvatar: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
 ]
@@ -52,11 +54,11 @@ export default function CoursesTaking() {
       </div>
 
       {/* Courses List */}
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {courses.map((course, idx) => (
           <div
             key={idx}
-            className="flex flex-col sm:flex-row items-center justify-between bg-white rounded-xl px-3 sm:px-4 py-3 shadow gap-3 sm:gap-0"
+            className="flex flex-col sm:flex-row items-center justify-between bg-white rounded-xl px-3 sm:px-4 py-3 shadow gap-3 sm:gap-0 sm:h-45"
           >
             {/* LEFT: Course info */}
             <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-1/3">
@@ -64,7 +66,7 @@ export default function CoursesTaking() {
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center"
                 style={{ backgroundColor: course.bgColor }}
               >
-                <img src={course.icon} alt={course.title} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <img src={course.icon} alt={course.title} className="w-15 h-15 sm:w-25 sm:h-20" />
               </div>
               <div>
                 <h3 className="text-sm sm:text-base font-semibold">{course.title}</h3>
